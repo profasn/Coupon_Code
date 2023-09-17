@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Special Discount Coupon Generator</title>
+    <title>Special Coupon - CREA | JIT 2k23</title>
+    <style>
+        /* CSS for setting the background image */
+        body {
+            background-image: url('background.png'); /* Replace 'background.png' with your PNG image file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Additional CSS styles for the content */
+        h1, p {
+            color: white; /* Set text color to contrast with the background */
+        }
+    </style>
 </head>
 <body>
-    <h1>Special Discount Coupon Generator</h1>
     <!-- Add your logo with the <img> tag -->
-    <img src="JIT.JPG" alt="Your Logo" width="100" height="100">
-    <p id="couponMessage">Click the button to reveal your special discount:</p>
-    <button id="generateButton">Generate Discount</button>
+    <img src="JIT.jpg" alt="Your Logo" width="100" height="100">
+    
+    <h1>Congrats! You have availed a special discount.</h1>
+    <p>Use this coupon code:</p>
     <p id="randomNumber" style="font-weight: bold;"></p>
 
     <script>
@@ -18,16 +32,12 @@
             const max = 9999; // Maximum 4-digit number
             const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
             const prefix = "ASHVINI";
-            const couponMessage = `Congrats! You have availed a special discount. Use this coupon code: ${prefix}${randomNumber}`;
-            document.getElementById("couponMessage").textContent = couponMessage;
-            document.getElementById("randomNumber").textContent = '';
+            const couponCode = `${prefix}${randomNumber}`;
+            document.getElementById("randomNumber").textContent = couponCode;
         }
 
-        // Attach the function to the button click event
-        document.getElementById("generateButton").addEventListener("click", generateDiscountCoupon);
-
-        // Initial message when the page loads
-        document.getElementById("couponMessage").textContent = "Click the button to reveal your special discount:";
+        // Generate the coupon code when the page loads
+        generateDiscountCoupon();
     </script>
 </body>
 </html>
