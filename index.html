@@ -6,7 +6,7 @@
         /* CSS for setting the background image */
         body {
             background-image: url('background.png'); /* Replace 'background.png' with your PNG image file */
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center; /* Center the background image */
@@ -18,6 +18,13 @@
         h1, p {
             color: white; /* Set text color to contrast with the background */
             text-align: center; /* Center-align text */
+        }
+
+        /* CSS for the coupon codes */
+        .coupon-code {
+            font-family: 'Arial', sans-serif; /* Change the font to Arial or any desired font */
+            font-weight: bold; /* Make the coupon codes bold */
+            font-size: 24px; /* Adjust the font size as needed */
         }
 
         /* CSS to give color to the logo */
@@ -62,15 +69,20 @@
     
     <!-- Right-aligned logo -->
     <img src="right_logo.png" alt="Right Logo" width="100" height="100" class="right-logo">
-
-    <!-- Add your logo with the <img> tag and apply a class for styling -->
-    <img src="JIT.JPG" alt="Your Logo" width="100" height="100" class="colored-logo">
     
     <h1>Special Coupon - CREA | JIT 2k23</h1>
     <p>Congrats! You have availed a special discount of 30%.</p>
     <p>Use these coupon codes:</p>
-    <p id="ashviniCode" style="font-weight: bold;"></p>
-    <p id="3dgmCode" style="font-weight: bold;"></p>
+
+    <!-- Left-aligned coupon code -->
+    <p class="coupon-code" style="float: left; margin-left: 20px;">
+        ASHVINI<span id="ashviniCode" style="font-weight: bold;"></span>
+    </p>
+
+    <!-- Right-aligned coupon code -->
+    <p class="coupon-code" style="float: right; margin-right: 20px;">
+        3DGM<span id="3dgmCode" style="font-weight: bold;"></span>
+    </p>
 
     <!-- Button container for center alignment -->
     <div class="button-container">
