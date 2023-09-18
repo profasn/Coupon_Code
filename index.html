@@ -26,6 +26,7 @@
             font-family: 'Arial', sans-serif; /* Change the font to Arial or any desired font */
             font-weight: bold; /* Make the coupon codes bold */
             font-size: 24px; /* Adjust the font size as needed */
+            text-align: center; /* Center-align coupon codes */
         }
 
         /* CSS to give color to the logo */
@@ -52,17 +53,13 @@
             cursor: pointer;
         }
 
-        /* CSS for left and right aligned logos */
-        .left-logo {
-            float: left; /* Align the logo to the left */
-            margin-left: 10px; /* Add some spacing */
-            width: 120px; /* Adjust logo width */
-            height: 120px; /* Adjust logo height */
+        /* CSS for logos */
+        .logo-container {
+            text-align: center; /* Center-align logos */
+            margin-top: 20px; /* Add spacing above logos */
         }
 
-        .right-logo {
-            float: right; /* Align the logo to the right */
-            margin-right: 10px; /* Add some spacing */
+        .left-logo, .right-logo {
             width: 120px; /* Adjust logo width */
             height: 120px; /* Adjust logo height */
         }
@@ -89,13 +86,8 @@
     <p>Congrats! You have availed a special discount of 30%.</p>
 
     <!-- Left-aligned 3DGM coupon code -->
-    <p class="coupon-code" style="float: left; margin-left: 10px;">
+    <p class="coupon-code">
         <span id="3dgmCode" style="font-weight: bold;"></span>
-    </p>
-
-    <!-- Right-aligned coupon code -->
-    <p class="coupon-code" style="float: right; margin-right: 10px;">
-        <span id="ashviniCode" style="font-weight: bold;"></span>
     </p>
 
     <!-- Button container for center alignment -->
@@ -107,9 +99,22 @@
         <a href="https://www.instagram.com/3dgalleriamysore/" class="button" target="_blank">3dgalleriamysore</a>
         <a href="https://www.instagram.com/crea_jit/" class="button" target="_blank">crea_jit</a>
         <a href="https://www.instagram.com/dentistry_unlimited/" class="button" target="_blank">dentistry_unlimited</a>
-        
-        <!-- Add your new button here -->
         <a href="https://www.instagram.com/rana_tummy/" class="button" target="_blank">rana_tummy</a>
+    </div>
+
+    <!-- Right-aligned logo -->
+    <img src="right_logo.png" alt="Right Logo" width="120" height="120" class="right-logo">
+
+    <!-- Coupon code container for center alignment -->
+    <div class="logo-container">
+        <!-- Center-aligned coupon codes -->
+        <p class="coupon-code">
+            <span id="ashviniCode" style="font-weight: bold;"></span>
+        </p>
+
+        <p class="coupon-code">
+            <span id="3dgmCode" style="font-weight: bold;"></span>
+        </p>
     </div>
 
     <!-- Bottom-aligned logo (centered) -->
