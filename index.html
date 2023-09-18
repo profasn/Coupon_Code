@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Special Coupon - CREA | JIT 2k23</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add viewport meta tag -->
     <style>
         /* CSS for setting the background image */
         body {
@@ -54,34 +55,40 @@
         /* CSS for left and right aligned logos */
         .left-logo {
             float: left; /* Align the logo to the left */
-            margin-left: 20px; /* Add some spacing */
+            margin-left: 10px; /* Add some spacing */
         }
 
         .right-logo {
             float: right; /* Align the logo to the right */
-            margin-right: 20px; /* Add some spacing */
+            margin-right: 10px; /* Add some spacing */
+        }
+
+        /* CSS to adjust layout for mobile screens */
+        @media screen and (max-width: 768px) {
+            h1, p, .coupon-code {
+                font-size: 18px; /* Reduce font size for mobile screens */
+            }
         }
     </style>
 </head>
 <body>
     <!-- Left-aligned logo -->
-    <img src="left_logo.png" alt="Left Logo" width="100" height="100" class="left-logo">
+    <img src="left_logo.png" alt="Left Logo" width="80" height="80" class="left-logo">
     
     <!-- Right-aligned logo -->
-    <img src="right_logo.png" alt="Right Logo" width="100" height="100" class="right-logo">
+    <img src="right_logo.png" alt="Right Logo" width="80" height="80" class="right-logo">
     
     <h1>Special Coupon - CREA | JIT 2k23</h1>
     <p>Congrats! You have availed a special discount of 30%.</p>
-    <p>Use these coupon codes:</p>
 
     <!-- Left-aligned coupon code -->
-    <p class="coupon-code" style="float: left; margin-left: 20px;">
-        ASHVINI<span id="ashviniCode" style="font-weight: bold;"></span>
+    <p class="coupon-code" style="float: left; margin-left: 10px;">
+        ASHVINI <span id="ashviniCode" style="font-weight: bold;"></span>
     </p>
 
     <!-- Right-aligned coupon code -->
-    <p class="coupon-code" style="float: right; margin-right: 20px;">
-        3DGM<span id="3dgmCode" style="font-weight: bold;"></span>
+    <p class="coupon-code" style="float: right; margin-right: 10px;">
+        3DGM <span id="3dgmCode" style="font-weight: bold;"></span>
     </p>
 
     <!-- Button container for center alignment -->
