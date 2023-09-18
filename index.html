@@ -13,6 +13,7 @@
             background-position: center; /* Center the background image */
             margin: 0; /* Remove default margin to center align content */
             padding: 0; /* Remove default padding to center align content */
+            position: relative; /* Set position to relative for absolute positioning of the logo */
         }
 
         /* Additional CSS styles for the content */
@@ -79,6 +80,13 @@
                 height: 80px; /* Adjust logo height for mobile screens */
             }
         }
+
+        /* CSS for right-aligned logo at the top */
+        .right-top-logo {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 10px; /* Adjust the right position as needed */
+        }
     </style>
 </head>
 <body>
@@ -88,10 +96,10 @@
     </div>
 
     <!-- Center-aligned JIT logo in the topmost part -->
-    <img src="JIT.JPG" alt="JIT Logo" width="120" height="120" class="colored-logo">
+    <img src="JIT.JPG" alt="JIT Logo" class="colored-logo">
     
-    <!-- Right-aligned logo -->
-    <div class="logo-container">
+    <!-- Right-aligned logo at the top -->
+    <div class="logo-container right-top-logo">
         <img src="right_logo.png" alt="Right Logo" width="120" height="120" class="logo">
     </div>
     
