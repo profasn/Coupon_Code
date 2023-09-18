@@ -25,7 +25,7 @@
         .coupon-code {
             font-family: 'Arial', sans-serif; /* Change the font to Arial or any desired font */
             font-weight: bold; /* Make the coupon codes bold */
-            font-size: 24px; /* Adjust the font size as needed */
+            font-size: 28px; /* Increase the font size for better visibility */
             text-align: center; /* Center-align coupon codes */
             color: #000; /* Set the coupon code color to black */
         }
@@ -33,7 +33,7 @@
         /* CSS to give color to the logo */
         .colored-logo {
             color: #ff0000; /* Set the color you want (e.g., red) */
-            display: block; /* Ensure the logo is centered */
+            display: inline-block; /* Ensure the logo is centered and aligned horizontally */
             margin: 0 auto; /* Center the logo horizontally */
         }
 
@@ -56,15 +56,15 @@
 
         /* CSS for logos */
         .logo-container {
-            text-align: left; /* Align the left logo to the left margin */
-            margin-left: 10px; /* Add spacing for the left logo */
+            text-align: center; /* Center align all logos */
+            margin: 20px 0; /* Add spacing around logos */
         }
 
-        .top-logo {
-            display: inline-block; /* Ensure all logos are in the same line horizontally */
-            margin: 20px auto 0; /* Center the logos horizontally and add spacing from top */
+        .logo {
             width: 120px; /* Adjust logo width */
             height: 120px; /* Adjust logo height */
+            display: inline-block; /* Ensure all logos are in the same line horizontally */
+            margin: 0 20px; /* Add spacing between logos */
         }
 
         /* CSS to adjust layout for mobile screens */
@@ -74,7 +74,7 @@
             }
 
             /* Adjust the logo size for mobile screens */
-            .top-logo {
+            .logo {
                 width: 80px; /* Adjust logo width for mobile screens */
                 height: 80px; /* Adjust logo height for mobile screens */
             }
@@ -84,16 +84,18 @@
 <body>
     <!-- Left-aligned logo -->
     <div class="logo-container">
-        <img src="left_logo.png" alt="Left Logo" width="120" height="120">
+        <img src="left_logo.png" alt="Left Logo" width="120" height="120" class="logo">
     </div>
 
     <!-- Center-aligned JIT logo in the topmost part -->
-    <img src="JIT.JPG" alt="JIT Logo" class="top-logo">
-
-    <!-- Right-aligned logo -->
-    <img src="right_logo.png" alt="Right Logo" width="120" height="120" style="float: right; margin-right: 10px;">
+    <img src="jit.jpg" alt="JIT Logo" class="colored-logo">
     
-    <h1>Special Coupon - CREA | JIT 2k23</h1>
+    <!-- Right-aligned logo -->
+    <div class="logo-container">
+        <img src="right_logo.png" alt="Right Logo" width="120" height="120" class="logo">
+    </div>
+    
+    <h1 style="font-size: 36px;">Special Coupon - CREA | JIT 2k23</h1>
     <p>Congrats! You have availed a special discount of 30%.</p>
 
     <!-- Coupon codes side by side -->
