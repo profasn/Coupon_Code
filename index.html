@@ -27,6 +27,7 @@
             font-weight: bold; /* Make the coupon codes bold */
             font-size: 24px; /* Adjust the font size as needed */
             text-align: center; /* Center-align coupon codes */
+            color: #000; /* Set the coupon code color to black */
         }
 
         /* CSS to give color to the logo */
@@ -55,15 +56,15 @@
 
         /* CSS for logos */
         .logo-container {
-            text-align: right; /* Align the right logo to the right margin */
-            margin-right: 10px; /* Add spacing for the right logo */
+            text-align: left; /* Align the left logo to the left margin */
+            margin-left: 10px; /* Add spacing for the left logo */
         }
 
-        .top-center-logo {
-            display: block; /* Ensure the top logo is centered */
-            margin: 20px auto 0; /* Center the top logo horizontally and add spacing from top */
-            width: 200px; /* Adjust top logo width */
-            height: 200px; /* Adjust top logo height */
+        .top-logo {
+            display: inline-block; /* Ensure all logos are in the same line horizontally */
+            margin: 20px auto 0; /* Center the logos horizontally and add spacing from top */
+            width: 120px; /* Adjust logo width */
+            height: 120px; /* Adjust logo height */
         }
 
         /* CSS to adjust layout for mobile screens */
@@ -73,9 +74,9 @@
             }
 
             /* Adjust the logo size for mobile screens */
-            .top-center-logo {
-                width: 120px; /* Adjust top logo width for mobile screens */
-                height: 120px; /* Adjust top logo height for mobile screens */
+            .top-logo {
+                width: 80px; /* Adjust logo width for mobile screens */
+                height: 80px; /* Adjust logo height for mobile screens */
             }
         }
     </style>
@@ -85,14 +86,12 @@
     <div class="logo-container">
         <img src="left_logo.png" alt="Left Logo" width="120" height="120">
     </div>
-    
-    <!-- Right-aligned logo -->
-    <div class="logo-container">
-        <img src="right_logo.png" alt="Right Logo" width="120" height="120">
-    </div>
 
     <!-- Center-aligned JIT logo in the topmost part -->
-    <img src="JIT.JPG" alt="JIT Logo" class="top-center-logo">
+    <img src="jit.jpg" alt="JIT Logo" class="top-logo">
+
+    <!-- Right-aligned logo -->
+    <img src="right_logo.png" alt="Right Logo" width="120" height="120" style="float: right; margin-right: 10px;">
     
     <h1>Special Coupon - CREA | JIT 2k23</h1>
     <p>Congrats! You have availed a special discount of 30%.</p>
