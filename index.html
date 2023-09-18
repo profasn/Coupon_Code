@@ -82,14 +82,19 @@
     </style>
 </head>
 <body>
-    <!-- Right-aligned logo -->
-    <img src="right_logo.png" alt="Right Logo" width="120" height="120" class="right-logo">
+    <!-- Left-aligned logo -->
+    <img src="left_logo.png" alt="Left Logo" width="120" height="120" class="left-logo">
     
     <h1>Special Coupon - CREA | JIT 2k23</h1>
     <p>Congrats! You have availed a special discount of 30%.</p>
 
-    <!-- Left-aligned coupon code -->
+    <!-- Left-aligned 3DGM coupon code -->
     <p class="coupon-code" style="float: left; margin-left: 10px;">
+        <span id="3dgmCode" style="font-weight: bold;"></span>
+    </p>
+
+    <!-- Right-aligned coupon code -->
+    <p class="coupon-code" style="float: right; margin-right: 10px;">
         <span id="ashviniCode" style="font-weight: bold;"></span>
     </p>
 
@@ -107,7 +112,7 @@
         <a href="https://www.instagram.com/rana_tummy/" class="button" target="_blank">rana_tummy</a>
     </div>
 
-    <!-- Center-aligned logo at the bottom -->
+    <!-- Bottom-aligned logo (centered) -->
     <img src="JIT.JPG" alt="JIT Logo" width="200" height="200" class="colored-logo" style="margin: 0 auto;">
     
     <script>
@@ -122,6 +127,10 @@
         // Generate the "ASHVINI" coupon code and display it
         const ashviniCode = generateRandomCode("ASHVINI", 4);
         document.getElementById("ashviniCode").textContent = ashviniCode;
+
+        // Generate the "3DGM" coupon code and display it
+        const threeDGMCode = generateRandomCode("3DGM", 4);
+        document.getElementById("3dgmCode").textContent = threeDGMCode;
     </script>
 </body>
 </html>
