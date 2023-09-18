@@ -7,7 +7,7 @@
         /* CSS for setting the background image */
         body {
             background-image: url('background.png'); /* Replace 'background.png' with your PNG image file */
-            background-size: cover;
+            background-size: contain; /* Reduce the background size to contain within the viewport */
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center; /* Center the background image */
@@ -17,7 +17,7 @@
 
         /* Additional CSS styles for the content */
         h1, p {
-            color: white; /* Set text color to contrast with the background */
+            color: white; /* Set text color to white */
             text-align: center; /* Center-align text */
         }
 
@@ -27,7 +27,7 @@
             font-weight: bold; /* Make the coupon codes bold */
             font-size: 28px; /* Increase the font size for better visibility */
             text-align: center; /* Center-align coupon codes */
-            color: #000; /* Set the coupon code color to black */
+            color: white; /* Set the coupon code color to white */
         }
 
         /* CSS to give color to the logo */
@@ -61,8 +61,8 @@
         }
 
         .logo {
-            width: 120px; /* Adjust logo width */
-            height: 120px; /* Adjust logo height */
+            width: 120px; /* Adjust logo width for all logos */
+            height: 120px; /* Adjust logo height for all logos */
             display: inline-block; /* Ensure all logos are in the same line horizontally */
             margin: 0 20px; /* Add spacing between logos */
         }
@@ -88,7 +88,7 @@
     </div>
 
     <!-- Center-aligned JIT logo in the topmost part -->
-    <img src="JIT.JPG" alt="JIT Logo" class="colored-logo">
+    <img src="JIT.JPG" alt="JIT Logo" width="120" height="120" class="colored-logo">
     
     <!-- Right-aligned logo -->
     <div class="logo-container">
