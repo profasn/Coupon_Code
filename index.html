@@ -6,10 +6,12 @@
         /* CSS for setting the background image */
         body {
             background-image: url('background.png'); /* Replace 'background.png' with your PNG image file */
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center; /* Center the background image */
+            margin: 0; /* Remove default margin to center align content */
+            padding: 0; /* Remove default padding to center align content */
         }
 
         /* Additional CSS styles for the content */
@@ -26,6 +28,10 @@
         }
 
         /* CSS for button styling */
+        .button-container {
+            text-align: center; /* Center align all buttons */
+        }
+
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -37,9 +43,26 @@
             margin: 10px;
             cursor: pointer;
         }
+
+        /* CSS for left and right aligned logos */
+        .left-logo {
+            float: left; /* Align the logo to the left */
+            margin-left: 20px; /* Add some spacing */
+        }
+
+        .right-logo {
+            float: right; /* Align the logo to the right */
+            margin-right: 20px; /* Add some spacing */
+        }
     </style>
 </head>
 <body>
+    <!-- Left-aligned logo -->
+    <img src="left_logo.png" alt="Left Logo" width="100" height="100" class="left-logo">
+    
+    <!-- Right-aligned logo -->
+    <img src="right_logo.png" alt="Right Logo" width="100" height="100" class="right-logo">
+
     <!-- Add your logo with the <img> tag and apply a class for styling -->
     <img src="JIT.JPG" alt="Your Logo" width="100" height="100" class="colored-logo">
     
@@ -49,13 +72,16 @@
     <p id="ashviniCode" style="font-weight: bold;"></p>
     <p id="3dgmCode" style="font-weight: bold;"></p>
 
-    <!-- Add buttons with links to Instagram pages -->
-    <a href="https://www.instagram.com/3dgalleriamysore/" class="button" target="_blank">3dgalleriamysore</a>
-    <a href="https://www.instagram.com/crea_jit/" class="button" target="_blank">crea_jit</a>
-    <a href="https://www.instagram.com/dentistry_unlimited/" class="button" target="_blank">dentistry_unlimited</a>
-    
-    <!-- Add your new button here -->
-    <a href="https://www.instagram.com/rana_tummy/" class="button" target="_blank">rana_tummy</a>
+    <!-- Button container for center alignment -->
+    <div class="button-container">
+        <!-- Add buttons with links to Instagram pages -->
+        <a href="https://www.instagram.com/3dgalleriamysore/" class="button" target="_blank">3dgalleriamysore</a>
+        <a href="https://www.instagram.com/crea_jit/" class="button" target="_blank">crea_jit</a>
+        <a href="https://www.instagram.com/dentistry_unlimited/" class="button" target="_blank">dentistry_unlimited</a>
+        
+        <!-- Add your new button here -->
+        <a href="https://www.instagram.com/rana_tummy/" class="button" target="_blank">rana_tummy</a>
+    </div>
 
     <script>
         // Function to generate a random code with a given prefix and number of digits
